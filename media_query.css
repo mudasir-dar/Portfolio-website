@@ -18,9 +18,23 @@
       display: block;
     }
   
+    .menu-toggle {
+      display: block;
+    }
     .home {
       padding-top: 100px;
     }
+    .home-content .text h2 {
+      font-size: 20px;
+    }
+  
+    .home-content .text p , .typing {
+      font-size: 10px;
+    }
+   .profile-img{
+    width: 125px;
+    height: 125px;
+   }
   
     .project-list {
       flex-direction: column;

@@ -22,6 +22,13 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
+const toggle = document.getElementById('menu-toggle');
+const navlinks = document.getElementById('nav-links');
+
+toggle.addEventListener('click', () => {
+  navlinks.classList.toggle('active');
+});
+
 
 //animation for typing effect
   // const textArray = ["Aspiring Web Developer", "Frontend Enthusiast", "React Learner"];

@@ -34,6 +34,14 @@ body {
     color: white;
     text-decoration: none;
   }
+  .nav-links a:hover {
+    color: #8ecfcf;
+  }
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
   
   .hamburger {
     display: none;
@@ -117,8 +125,8 @@ body {
   
   
   .profile-img {
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
     border-radius: 50%;
     margin-top: 1rem;
     object-fit: cover;
