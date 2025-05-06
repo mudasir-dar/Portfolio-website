@@ -57,9 +57,12 @@ body {
   
   /* Sections */
   .section {
-    padding: 100px 20px ;
+    padding: 100px 40px ;
     text-align: center;
   }
+.section>h2{
+  padding-bottom:20px;
+}
   
   .home {
     display: flex;
