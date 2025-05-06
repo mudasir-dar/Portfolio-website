@@ -1,11 +1,17 @@
 // Reveal on scroll
 // Toggle mobile nav
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+const toggle = document.getElementById('menu-toggle');
+const navlinks = document.getElementById('nav-links');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+toggle.addEventListener('click', () => {
+  navlinks.classList.toggle('active');
 });
+// const hamburger = document.getElementById('hamburger');
+// const navLinks = document.getElementById('nav-links');
+
+// hamburger.addEventListener('click', () => {
+//   navLinks.classList.toggle('active');
+// });
 
 // Animate on scroll
 const faders = document.querySelectorAll('.fade-in');
@@ -22,12 +28,7 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
-const toggle = document.getElementById('menu-toggle');
-const navlinks = document.getElementById('nav-links');
 
-toggle.addEventListener('click', () => {
-  navlinks.classList.toggle('active');
-});
 
 
 //animation for typing effect

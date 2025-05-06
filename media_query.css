@@ -1,29 +1,30 @@
 /* Responsive */
 @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
     .nav-links {
+      position: absolute;
       flex-direction: column;
       display: none;
       width: 100%;
       background-color: #283c86;
-      position: absolute;
       top: 60px;
       left: 0;
+      opacity: 0;
+      gap: 15px;
+    padding: 20px 20px; 
+      z-index: 1000;
+      transition: opacity 0.4s ease;
+    
     }
   
     .nav-links.active {
       display: flex;
+      opacity: 1;
     }
   
-    .hamburger {
-      display: block;
-    }
-  
-    .menu-toggle {
-      display: block;
-    }
-    .home {
-      padding-top: 100px;
-    }
+    
     .home-content .text h2 {
       font-size: 20px;
     }
@@ -31,9 +32,9 @@
     .home-content .text p , .typing {
       font-size: 10px;
     }
-   .profile-img{
-    width: 125px;
-    height: 125px;
+   .profile-img {
+    width: 100px;
+    height: 100px;
    }
   
     .project-list {
